@@ -7,6 +7,12 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/* Ordering JUnit Tests
+@TestMethodOrder(MethodOrder.MethodName.class)
+@TestMethodOrder(MethodOrder.DisplayName.class)
+@TestMethodOrder(MethodOrder.OrderAnnotation.class)     --> if we want to use this then we need to put @Order annotation at test method in which lowest number has higher priority
+*/
+
 //@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 public class DemoUtilsTest {
     DemoUtils demoUtils;
